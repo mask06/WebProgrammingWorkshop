@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/BootstrapTemplates/Assets/Css/Renkli-Buton.css">
+</head>
+
+<body>
+    <button class="renk" onclick="Renkli();">renk</button>
+    <script>
+        
+        function Renkli() {
+         const red = Math.floor(Math.random()*256);
+         const green = Math.floor(Math.random()*256);
+         const blue = Math.floor(Math.random()*256);
+         const rastgeleRenk = `rgb(${red},${green},${blue})`
+         document.body.style.backgroundColor=rastgeleRenk;
+
+        }
+    </script>
+</body>
+
+</html>

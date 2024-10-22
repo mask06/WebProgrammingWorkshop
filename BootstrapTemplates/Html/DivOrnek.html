@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/BootstrapTemplates/Assets/Css/DivOrnek.css">
+
+</head>
+
+<body>
+    <div id="color-box"></div>
+    <br>
+    <button class="renkButon" onclick="">Renk Değiştir</button>
+    <script>
+        const colorBox = document.getElementById('color-box');
+
+        // Fare imleci kutuya geldiğinde
+        colorBox.addEventListener('mouseenter', function () {
+            colorBox.style.backgroundColor = ""; // Rengi kırmızı yap
+        });
+
+        // Fare imleci kutudan çıktığında
+        colorBox.addEventListener('mouseleave', function () {
+            colorBox.style.backgroundColor = 'green'; // Rengi yeşil yap
+        });
+
+    </script>
+</body>
+
+</html>
