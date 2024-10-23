@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  <button id="ekleBtn" onclick="ekle()">
+        oluştur
+    </button>
+    <input type="text">
+    <div id="urunContainer"></div>
+    <script>
+        let button = document.getElementById("ekleBtn");
+        let div = document.getElementById("urunContainer");
+       function ekle () {
+            let btn = document.createElement("button");
+            btn.textContent = "ekle";
+            let txt = document.createElement("input");
+            txt.type = Text;
+            txt.placeholder = "yazınız"
+            div.appendChild(txt);
+            div.appendChild(btn);
+        }
+
+    </script> -->
+    <button id="ekleBtn">ürün Ekle</button>
+    <div id="urunContainer"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=> {
+            const ekleBtn = document.querySelector('#ekleBtn');
+            const urunContainer = document.querySelector('#urunContainer');
+
+            ekleBtn.onclick=()=>{
+                const label = document.createElement('label')
+                label.textContent ="Urun Adi;"
+                const input = document.createElement('input')
+                input.type="text";
+                input.placeholder ="urun adı yaz";
+                urunContainer.appendChild(label);
+                urunContainer.appendChild(input);
+            }
+        })
+    </script>
+</body>
+</html>
